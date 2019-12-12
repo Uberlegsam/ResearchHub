@@ -8,11 +8,16 @@
 @import "atoms/icon";
 @import "atoms/nav-item";
 @import "atoms/social-item";
+@import "atoms/checkbox-item";
 @import "atoms/logo";
 
 @import "molecules/navigation";
+@import "molecules/checkbox";
 @import "molecules/search";
 @import "molecules/profile";
+@import "molecules/main-content";
+@import "molecules/buttons";
 
-@import "organisms/footer";
 @import "organisms/header";
+@import "organisms/main";
+@import "organisms/footer";
