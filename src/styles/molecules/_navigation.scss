@@ -1,0 +1,18 @@
+.navigation {
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+
+        li{
+            list-style-type: none;
+        }
+
+    }       
+}
+
+
+.navigation:nth-of-type(2){
+    margin-left: auto;
+}
