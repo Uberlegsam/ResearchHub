@@ -10,7 +10,37 @@
         }
 
     }       
-}
+
+    &.navigation--header{
+        color: $haiti;
+        ul li a{
+                    color: $haiti;
+                }
+        
+
+        .nav-item{
+            margin-left: 0;
+        }
+
+        li{
+            margin-left: 75px;
+        }
+
+        li:first-child{
+            margin-left: 45px;
+        }
+        
+        li:last-child{
+
+        margin-left: 81px;
+        }
+
+    }
+        
+    }
+
+
+
 
 
 .navigation:nth-of-type(2){

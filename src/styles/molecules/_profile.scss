@@ -1,0 +1,29 @@
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.profile-coin{
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: $haiti;
+    margin-left: 11px;
+}
+
+.profile-logo{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.coin-icon{
+    width: 21px;
+    height: 21px;
+    margin-left: 6px;
+}

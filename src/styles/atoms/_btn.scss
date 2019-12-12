@@ -1,0 +1,27 @@
+.btn{
+    background-color: $neonBlue;
+    border-radius: 4px;
+    color: $white;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+
+
+    &.btn--add{
+        padding: 13px 27px;
+        margin-left: 35px;
+    }
+    
+
+    &.btn--step{
+        padding: 18px 55px;
+    }
+
+    &.btn--transparent{
+        padding: 19px 0 17px 0;
+        color: $neonBlue;
+    }
+}

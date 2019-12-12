@@ -12,7 +12,7 @@ function Footer(){
 
     return(
         <footer className="footer">
-            <img className="logo-footer" src={footerLogo} alt="logo"></img>
+            <img className="logo" src={footerLogo} alt="logo"></img>
             <nav className="navigation">
                 <ul>
                     {navLeft}
