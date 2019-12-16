@@ -4,9 +4,10 @@ function Radiobutton(props){
 
     return(
         <div className="checkbox-item">
-            <input type="checkbox" id="Checkbox"/>
-            <label for="checkbox">{props.label}</label>
-        </div> 
+            <input name="checkboxcheck" type="radio" id={props.id}/>
+            <label for={props.id}>{props.label}</label> 
+        </div>  
+        
     )
 }
 

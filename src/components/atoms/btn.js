@@ -3,7 +3,7 @@ import React from 'react';
 
 function Button(props){
     return(
-        <a className={props.class} href="">{props.title}</a>
+        <input type="submit" className={props.class} value={props.title}/>
     )
 }
 
