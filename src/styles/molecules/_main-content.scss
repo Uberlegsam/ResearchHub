@@ -5,35 +5,39 @@
 }
 
 .information-item{
+    width: 600px;
     text-align: start;
-    font-family: $fontMain;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: $haiti;
+    margin: 37px auto 0;
 
     &.information-item--hubs{
         display: flex;
         flex-direction: column;
+
+       span{
+            color:$neonBlue;
+        }
+        
+    }
+
+    &.information-item--date{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
         
     }
 }
 
+
 .hubsitems{
-    width: 100%;
-    max-width: 600px;
+    width: auto;
     height: 50px;
-    border: 1px solid #E8E8F2;
-    outline: none;
-    font-family: $fontMain;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: $haiti;
 }
 
 .hubs-item{
     width: 100%;
-    max-width: 600px;
 }
