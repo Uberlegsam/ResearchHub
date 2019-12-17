@@ -1,0 +1,46 @@
+.file-upload{
+    width: 100%;
+    background-color: #F7F7FB;
+    border-radius: 2px;
+    text-align: left;
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: relative;
+    padding-right: 182px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+
+    .file-delete-img{
+        position: absolute;
+        top: 15px;
+        right: 13px;
+        cursor: pointer;
+    }
+
+    .file-info{
+        margin-left: 17px;
+    }
+
+    .filename{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $haiti;
+        margin-bottom: 7px;
+    }
+
+    .filesize{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: $haiti; 
+        opacity: 0.5;
+    }
+}
+

@@ -6,6 +6,7 @@ import Hubs from '../molecules/hubs';
 import Hubsitems from '../atoms/option-item';
 import DatePublication from '../molecules/publication-time';
 import Checkboxauthor from '../molecules/checkboxauthor';
+import Dropzone from '../molecules/dropzonepdf';
 import TimeItems from '../atoms/time-item';
 
 
@@ -26,7 +27,8 @@ function Main(){
             <div className="main-content">
                 <h2 className="main-title">Academic Paper<span>Up to 15 MB (.pdf)</span></h2>
                 <div className="information-item information-item--hubs">
-                    <h3 className="information-title">Paper PDF<span>*</span></h3>
+                    <h3 className="dropzone-title">Paper PDF<span>*</span></h3>
+                        <Dropzone />
                     </div>
                 <h2 className="main-title">Main information</h2>
                 <div className="information-item information-item--hubs">

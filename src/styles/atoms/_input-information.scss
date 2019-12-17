@@ -7,12 +7,17 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    width: auto;
+    width: 100%;
     border-radius: 2px;
+
+    &.input-information--date{
+        max-width: 186px;
+    }
 }
 
 .input-information[placeholder]{
     padding-top: 16px;
     padding-bottom: 15px;
+    padding-left: 15px;
 }
 
