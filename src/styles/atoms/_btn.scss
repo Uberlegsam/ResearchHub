@@ -22,9 +22,20 @@
         padding: 18px 55px;
     }
 
+    &.btn--border{
+        border: 1px solid $neonBlue;
+        padding: 7px 34px !important;
+    }
+
     &.btn--transparent{
         padding: 19px 0 17px 0;
         color: $neonBlue;
         background-color: transparent;
     }
+
+    &.btn--popup{
+        padding:18px 85.35px ;
+    }
+
+    
 }

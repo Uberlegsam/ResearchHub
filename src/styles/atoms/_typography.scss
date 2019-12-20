@@ -75,3 +75,22 @@
     color: $haiti;
     margin-bottom: 6px;
 }
+
+.popup-title{
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 26px;
+    line-height: 30px;
+    color: $haiti;
+}
+
+.popup-subtitle{
+    font-family:$fontMain;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $haiti;
+    opacity: 0.8;
+}

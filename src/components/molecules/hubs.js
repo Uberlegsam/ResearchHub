@@ -1,14 +1,17 @@
 const Hubs=[
     { 
-        name: 'About'
+        label: 'About',
+        value: 'About'
     },
 
     { 
-        name: 'Hubs'
+        label: 'Hubs',
+        value: 'Hubs'
     },
 
     { 
-        name: 'Help'
+        label: 'Help',
+        value: 'Help'
     },
 ];
 

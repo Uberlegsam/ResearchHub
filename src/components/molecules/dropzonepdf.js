@@ -64,18 +64,18 @@ function Dropzone() {
 
   return (
     <div className="dropzone-content ">
-    <div class='dropzone-content--active'>
-      <div {...getRootProps({style})}>
-        <input {...getInputProps()} />
-            <img src={cloud}></img>
-            <p className="upload-text">Drag & drop or <span onClick={open}>browse</span> PDF to upload</p>
+      <div class='dropzone-content--active'>
+        <div {...getRootProps({style})}>
+          <input {...getInputProps()} />
+              <img src={cloud}></img>
+              <p className="upload-text">Drag & drop or <span onClick={open}>browse</span> PDF to upload</p>
+        </div>
+        <p className="underdroptext">or paste a url to the paper</p>
+        <input type="text" className="input-information" placeholder="Paste a url to the paper"/>
       </div>
-      <p className="underdroptext">or paste a url to the paper</p>
-      <input type="text" className="input-information" placeholder="Paste a url to the paper"/>
-    </div>
-    <div className="dropzone-content--disabled">
-        {file}
-    </div>
+      <div className="dropzone-content--disabled">
+          {file}
+      </div>
     </div>
   );
 }

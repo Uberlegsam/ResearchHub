@@ -3,20 +3,16 @@ import Button from '../atoms/btn';
 import Checkbox from '../molecules/checkbox';
 import Radiobutton from '../atoms/checkbox-item';
 import Hubs from '../molecules/hubs';
-import Hubsitems from '../atoms/option-item';
 import DatePublication from '../molecules/publication-time';
 import Checkboxauthor from '../molecules/checkboxauthor';
 import Dropzone from '../molecules/dropzonepdf';
 import TimeItems from '../atoms/time-item';
-
-
-
-
-
+import Select from 'react-select';
+import Authors from '../molecules/authors';
+import Example from '../molecules/customselect'
 
 function Main(){
     const checkboxItem = Checkbox.map(item => <Radiobutton id={item.id} label={item.label}/>);
-    const hubsitem = Hubs.map(item => <Hubsitems name={item.name} />);
     const timeitem = DatePublication.map(item => <TimeItems label={item.label} placeholder={item.placeholder}/>) 
 
 
@@ -29,7 +25,7 @@ function Main(){
                 <div className="information-item information-item--hubs">
                     <h3 className="dropzone-title">Paper PDF<span>*</span></h3>
                         <Dropzone />
-                    </div>
+                </div>
                 <h2 className="main-title">Main information</h2>
                 <div className="information-item information-item--hubs">
                     <h3 className="information-title">Paper<span>*</span></h3>
@@ -37,11 +33,8 @@ function Main(){
                 </div>
                 <div className="information-item information-item--hubs">
                     <h3 className="information-title">Authors<span>*</span></h3>
-                    <select className="hubsitems input-information">
-                        <option value="" disabled selected>Search for author</option>
-                        {hubsitem}
-                    </select>
-                        <Checkboxauthor />
+                    <Example />
+                    <Checkboxauthor />
                 </div>
                 <div className="information-item information-item--date">
                     {timeitem}
@@ -54,10 +47,7 @@ function Main(){
                 </div>
                 <div className="information-item information-item--hubs">
                     <h3 className="information-title" >Hubs<span>*</span></h3>
-                    <select className="hubsitems input-information">
-                        <option value="" disabled selected>Select up to 3 hubs</option>
-                        {hubsitem}
-                    </select>
+                    <Select className="input-information" isClearable isMulti isSearchable placeholder="Select up to 3 hubs" options={Hubs}/>
                 </div>
             </div>   
             <form className="buttons">
@@ -65,6 +55,7 @@ function Main(){
                 <Button class='btn btn--step'  title='Next Step'/>
             </form>
         </main>
+        
     )
 }
 

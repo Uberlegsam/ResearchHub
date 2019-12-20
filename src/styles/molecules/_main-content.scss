@@ -1,6 +1,7 @@
 .main-content{
     border: 1px solid #EDEDED;
-    border-radius: 0px 0px 3px 3px;
+    border-top: 4px solid #DEDEE6;
+    border-radius: 4px 4px 3px 3px;
     padding: 50px 60px 60px;
 }
 
@@ -29,6 +30,42 @@
     }
 }
 
+.css-1okebmr-indicatorSeparator{
+    display: none;
+}
+
+.css-yk16xz-control,
+.css-1pahdxg-control{
+    border-color: transparent;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #FBFBFD !important;
+}
+
+
+.css-1hwfws3{
+    padding-left: 15px !important;
+}
+
+.css-1rhbuit-multiValue{
+    padding: 3px;
+    background-color: #DEDEE6;
+}
+    
+.css-12jo7m5{
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #241F3A;
+}
+
+.css-tlfecz-indicatorContainer{
+    cursor: pointer;
+}
+
 
 .hubsitems{
     width: auto;
@@ -37,6 +74,8 @@
     padding-bottom: 15px;
     padding-left: 15px;
     color: $haiti;
+    appearance: none;
+    
 }
 
 .hubs-item{
