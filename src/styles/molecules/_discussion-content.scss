@@ -1,0 +1,36 @@
+.discussion-content{
+    width: 600px;
+    margin: 36px auto 0;
+    text-align: start;
+    font-family: $fontMain;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $haiti;
+
+    input{
+        margin-top: 6px;
+        margin-bottom: 26px;
+        font-family: $fontMain;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $haiti;
+    }
+
+    input::placeholder{
+        opacity: 0.5;
+    }
+
+    textarea{
+        background: #FBFBFD;
+        border: 1px solid #E8E8F2;
+        border-radius: 2px;
+        padding-left: 15px;
+        padding-top: 16px;
+    }
+
+
+}

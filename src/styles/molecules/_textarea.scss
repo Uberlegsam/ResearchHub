@@ -1,0 +1,38 @@
+.textarea{
+    width: 100%;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $haiti;
+}
+
+.textarea-label{
+    margin-top: 20px;
+}
+
+.textarea-input{
+    width: 100%;
+    min-height: 100px;
+    margin-top: 19px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $haiti;
+}
+
+.textarea-input::placeholder{
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $haiti;
+    opacity: 0.5;
+}

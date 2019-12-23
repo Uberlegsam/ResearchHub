@@ -1,7 +1,33 @@
 .buttons{
-    margin-top: 40px;
+    margin-top: 34px;
+    position: relative;
+
+    &.buttons--step2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
 
     .btn--transparent{
         margin-right: 59px;
+    }
+
+    a{
+        // position: absolute;
+        // // left: 0;
+        // line-height: 55px;
+        text-decoration: none;
+        font-family: $fontMain;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: $neonBlue;
+        display: inline-block;
+        margin-right: 21.518%;
+
+        img{
+            margin-right: 11px;
+        }
     }
 }

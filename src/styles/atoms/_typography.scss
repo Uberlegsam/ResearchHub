@@ -50,6 +50,7 @@
     padding-bottom: 8px;
     border-bottom: 1px solid #EBEBEB;
     text-align: start;
+    margin-bottom: 0;
 
     span{
         margin-right: 0;
@@ -62,6 +63,20 @@
         color: $haiti;
         opacity: 0.6;
         float:right;
+
+    }
+
+    a{
+        margin-right: 0;
+        margin-left: auto;
+        font-family: $fontMain;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 33px;
+        color: $neonBlue;
+        float:right;
+        text-decoration: none;
 
     }
 }

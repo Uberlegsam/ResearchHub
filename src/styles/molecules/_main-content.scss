@@ -3,6 +3,18 @@
     border-top: 4px solid #DEDEE6;
     border-radius: 4px 4px 3px 3px;
     padding: 50px 60px 60px;
+    position: relative;
+}
+
+.greenline{
+    position: absolute;
+    width: 33.386%;
+    height: 4px;
+    top: -4px;
+    left: 0;
+    background-color: #26C938;
+    border-radius: 4px 0px 0px 0px;
+    //step2 width 66.772%
 }
 
 .information-item{

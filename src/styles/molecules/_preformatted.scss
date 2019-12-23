@@ -1,0 +1,18 @@
+.preformatted{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 598px;
+    margin: 8px auto 0;
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $haiti;
+    opacity: 0.5;
+}
+
+.preformatteditem{
+    margin-left: 5px;
+}

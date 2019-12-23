@@ -2,7 +2,6 @@ import React, { Component } from "react";
 // import './index.scss'
 import Cross from "../../images/cross.svg";
 import {Forms, SocialForms} from "../molecules/PopupForm";
-
 import Button from '../atoms/btn';
 import SingleForm from '../atoms/SingleForm';
 import SocialForm from '../atoms/SocialForms';
