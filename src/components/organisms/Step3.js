@@ -11,7 +11,7 @@ function Step3(){
     }
 
     return(
-        <main className="main">
+        <div>
                 <h1 className="title">Paper Upload</h1>
                 <p className="subtitle">Step 3: Start a discussion on the paper</p>
             <div className="main-content">
@@ -27,12 +27,7 @@ function Step3(){
                 
             </div>    
             </div>
-            <form className="buttons buttons--step2">
-                <a href="#"><img src={arrow}></img>Back to previous step</a>
-                <Button class='btn btn--step btn--step_transparent' title='Skip for now'/>
-                <Button class='btn btn--step'  title='Save'/>
-            </form>
-        </main>
+        </div>
     )
 
 }

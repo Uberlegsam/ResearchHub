@@ -17,7 +17,7 @@ function Step1(){
 
 
     return(
-        <main className="main">
+        <div>
                 <h1 className="title">Paper Upload</h1>
                 <p className="subtitle">Step 1: Main Information</p>
             <div className="main-content">
@@ -51,11 +51,8 @@ function Step1(){
                     <Select className="input-information" isClearable isMulti isSearchable placeholder="Select up to 3 hubs" options={Hubs}/>
                 </div>
             </div>   
-            <form className="buttons">
-                <Button class='btn btn--transparent' title='Cancel '/>
-                <Button class='btn btn--step'  title='Next Step'/>
-            </form>
-        </main>
+            
+        </div>
         
     )
 }

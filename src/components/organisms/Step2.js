@@ -4,7 +4,6 @@ import textareas from '../molecules/textareas';
 import TextArea from '../atoms/textarea-item';
 import preformatted from '../molecules/preformatted';
 import PreformattedItem from '../atoms/preformatted-item';
-import arrow from '../../images/arrowleft.svg'
 
 function Step2(){
 
@@ -16,7 +15,7 @@ function Step2(){
     }
 
     return(
-        <main className="main">
+        <div>
                 <h1 className="title">Paper Upload</h1>
                 <p className="subtitle">Step 2: Add a summary that concisely highlights the main aspects of the paper</p>
             <div className="main-content">
@@ -28,13 +27,8 @@ function Step2(){
             <div className="preformatted">
                 {preformatteditem}
             </div>
-            </div>    
-            <form className="buttons buttons--step2">
-                <a href="#"><img src={arrow}></img>Back to previous step</a>
-                <Button class='btn btn--step btn--step_transparent' title='Skip for now'/>
-                <Button class='btn btn--step'  title='Save'/>
-            </form>
-        </main>
+            </div>
+        </div>
     )
 
 }
