@@ -12,8 +12,17 @@ import Authors from '../molecules/authors';
 import Example from '../molecules/customselect'
 
 function Step1(){
-    const checkboxItem = Checkbox.map(item => <Radiobutton id={item.id} label={item.label}/>);
-    const timeitem = DatePublication.map(item => <TimeItems label={item.label} placeholder={item.placeholder}/>) 
+    const checkboxItem = Checkbox.map(item => <Radiobutton key={item.id} 
+                                                            id={item.id} 
+                                                            label={item.label} 
+                                                            checked={item.checked}/>);
+
+    const timeitem = DatePublication.map(item => <TimeItems key={item.id} 
+                                                            label={item.label} 
+                                                            placeholder={item.placeholder} 
+                                                            id={item.id}
+                                                            maxlength={item.maxlength}
+                                                            />); 
 
 
     return(
@@ -30,7 +39,7 @@ function Step1(){
                 <h2 className="main-title">Main information</h2>
                 <div className="information-item information-item--hubs">
                     <h3 className="information-title">Paper<span>*</span></h3>
-                    <input type="text" className="input-information hubsitems"/>
+                    <input type="text" className="input-information hubsitems" id="book-title"/>
                 </div>
                 <div className="information-item information-item--hubs">
                     <h3 className="information-title">Authors<span>*</span></h3>
@@ -42,7 +51,7 @@ function Step1(){
                 </div>
                 <div className="information-item">
                     <h3 className="information-title">Type</h3>
-                    <form class="checkbox">
+                    <form className="checkbox">
                         {checkboxItem}
                     </form>
                 </div>
@@ -51,9 +60,7 @@ function Step1(){
                     <Select className="input-information" isClearable isMulti isSearchable placeholder="Select up to 3 hubs" options={Hubs}/>
                 </div>
             </div>   
-            
         </div>
-        
     )
 }
 

@@ -1,5 +1,5 @@
 const Hubs=[
-    { 
+    {   
         label: 'About',
         value: 'About'
     },

@@ -1,4 +1,6 @@
 .header{
+    position: fixed;
+    top: 0;
     width: 100%;
     background-color: $white;
     padding: 12px 50px 9px 39px;
@@ -7,4 +9,38 @@
     align-items: center;
     border-bottom: 1px solid #EBEBEB;
     box-shadow: 0px 2px 4px rgba(185, 185, 185, 0.16704);
+    z-index: 2;
+
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .burger-menu{
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: $haiti;
+        position: relative;
+    }
+
+    .burger-menu:after{
+        width: 25px;
+        height: 2px;
+        background-color: $haiti;
+        position: absolute;
+        bottom: 8px;
+
+    }
+
+    .burger-menu:before{
+        width: 25px;
+        height: 2px;
+        background-color: $haiti;
+        position: absolute;
+        top: 0px;
+
+    }
+
 }

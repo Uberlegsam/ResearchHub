@@ -18,13 +18,11 @@ function Step3(){
             <div className="greenline" style={greenlinestep3}></div>
             <h2 className="main-title">Discussion</h2>
             <div className="discussion-content">
-
-                <label for="discussion-title" className="information-title">Title</label>
+                <label htmlFor="discussion-title" className="information-title">Title</label>
                 <input className="input-information" id="discussion-title" type="text" placeholder="Title of discussion"></input>
                 
-                <label for="discussion-text" className="information-title">Question</label>
+                <label htmlFor="discussion-text" className="information-title">Question</label>
                 <textarea id="discussion-text" placeholder="Leave a question or a comment" className="textarea-input"></textarea>
-                
             </div>    
             </div>
         </div>

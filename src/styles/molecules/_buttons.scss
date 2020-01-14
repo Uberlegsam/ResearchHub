@@ -7,6 +7,10 @@
         flex-direction: row;
         align-items: center;
 
+        a:first-child{
+            margin-right: 21.518%;
+        }
+
     }
 
     .btn--transparent{
@@ -14,9 +18,6 @@
     }
 
     a{
-        // position: absolute;
-        // // left: 0;
-        // line-height: 55px;
         text-decoration: none;
         font-family: $fontMain;
         font-style: normal;
@@ -24,10 +25,27 @@
         font-size: 17px;
         color: $neonBlue;
         display: inline-block;
-        margin-right: 21.518%;
+        
 
         img{
             margin-right: 11px;
         }
     }
+}
+
+.select-button{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+
+    p{
+        margin-right: 20px;
+    }
+
+    
 }

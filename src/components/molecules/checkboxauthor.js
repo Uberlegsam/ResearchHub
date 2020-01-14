@@ -5,7 +5,7 @@ function Checkboxauthor(){
     return(
         <div className="checkbox-author ">
             <input type="checkbox" id="IsAuthor"/>
-            <label for="IsAuthor">I am an author of this paper</label>
+            <label htmlFor="IsAuthor">I am an author of this paper</label>
         </div>
     )
 }

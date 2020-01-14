@@ -1,17 +1,20 @@
 const Сheckbox=[
     {   
         id: 1,
-        label: 'Journal'
+        label: 'Journal',
+        checked: 'checked'
     },
 
     { 
         id: 2,
-        label: 'Conference'
+        label: 'Conference',
+        checked: ''
     },
 
     { 
         id: 3,
-        label: 'Other'
+        label: 'Other',
+        checked: ''
     },
 ];
 

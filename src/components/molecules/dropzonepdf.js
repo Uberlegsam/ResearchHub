@@ -37,7 +37,7 @@ function Dropzone() {
     noClick: true,
     noKeyboard: true,
     accept: 'application/pdf',
-    maxSize: 15728640
+    // maxSize: 15728640
   })
   const removeFile = file => () => {
     const newFiles = [...myFiles];
@@ -58,20 +58,20 @@ function Dropzone() {
             <p className="filesize">{Math.ceil(file.size/1000000)} MB</p>
         </div>
           
-        <img className="file-delete-img"src={Delete} onClick={removeFile(file)}></img>
+        <img className="file-delete-img" src={Delete} onClick={removeFile(file)}></img>
     </div>
   ));
 
   return (
     <div className="dropzone-content ">
-      <div class='dropzone-content--active'>
+      <div className='dropzone-content--active'>
         <div {...getRootProps({style})}>
-          <input {...getInputProps()} />
+          <input {...getInputProps()} id="pdf-path"/>
               <img src={cloud}></img>
               <p className="upload-text">Drag & drop or <span onClick={open}>browse</span> PDF to upload</p>
         </div>
         <p className="underdroptext">or paste a url to the paper</p>
-        <input type="text" className="input-information" placeholder="Paste a url to the paper"/>
+        <input type="text" className="input-information" placeholder="Paste a url to the paper" id="pdf-url"/>
       </div>
       <div className="dropzone-content--disabled">
           {file}

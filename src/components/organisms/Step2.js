@@ -7,8 +7,8 @@ import PreformattedItem from '../atoms/preformatted-item';
 
 function Step2(){
 
-    const textarea = textareas.map(item => <TextArea id={item.id} label={item.label} placeholder={item.placeholder}/>)
-    const preformatteditem = preformatted.map(item => <PreformattedItem id={item.id} label={item.label} />) 
+    const textarea = textareas.map(item => <TextArea key={item.id} id={item.id} label={item.label} placeholder={item.placeholder}/>)
+    const preformatteditem = preformatted.map(item => <PreformattedItem key={item.id} id={item.id} label={item.label} />) 
 
     const greenlinestep2={
         width: '66.772%',

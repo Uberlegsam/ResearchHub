@@ -1,20 +1,23 @@
 const DatePublication=[
-    {   
-        id: 1,
+    {  
+        id: 'year',
         label: 'Year of Publication',
-        placeholder: 'yyyy'
+        placeholder: 'yyyy',
+        maxlength: 4
     },
 
     { 
-        id: 2,
+        id: 'month',
         label: 'Month of Publication',
-        placeholder: 'mm'
+        placeholder: 'mm',
+        maxlength: 2
     },
 
     { 
-        id: 3,
+        id: 'day',
         label: 'Day of Publication',
-        placeholder: 'dd'
+        placeholder: 'dd',
+        maxlength: 2
     },
 ];
 
