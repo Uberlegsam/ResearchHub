@@ -1,0 +1,49 @@
+.author-card{
+    background: #F7F7FB;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 0 17px 21px;
+}
+
+
+.author-desc{
+    margin-left: 14px;
+}
+
+.desc-title{
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: $haiti;
+}
+
+.desc-subtitle{
+    font-family: $fontMain;
+    font-style: normal;
+    font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        opacity: 0.5;
+        color: $haiti;
+}
+
+.author-create{
+    border-radius: 50%;
+    border: 1px solid $neonBlue;
+    width: 43px;
+    height: 43px;
+}
+
+.author-create::after{
+    content: '+';
+    color: $neonBlue;
+    font-size: 34px;
+    line-height: 42px;
+    margin-left: 11px;
+}

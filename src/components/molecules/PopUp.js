@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-// import './index.scss'
 import Cross from "../../images/cross.svg";
-import {Forms, SocialForms} from "../molecules/PopupForm";
-import Button from '../atoms/btn';
-import SingleForm from '../atoms/SingleForm';
-import SocialForm from '../atoms/SocialForms';
+import {DataInput, SocMediaInput} from "./PopupForm";
+import Button from '../atoms/Button';
+import PopupInput from '../atoms/PopupInput';
+import SocialInput from '../atoms/SocialInput';
 
-const form = Forms.map(item => <SingleForm label={item.label} placeholder={item.placeholder} required={item.required} id={item.id}/>);
-const socialform = SocialForms.map(item => <SocialForm placeholder={item.placeholder} img={item.src}/>);
+const form = DataInput.map(item => <PopupInput label={item.label} placeholder={item.placeholder} required={item.required} id={item.id}/>);
+const socialform = SocMediaInput.map(item => <SocialInput placeholder={item.placeholder} img={item.src}/>);
 
 export default class PopUp extends Component {
-  
+
+ 
   handleClick = () => {
     this.props.toggle();
     document.body.style.overflowY = 'scroll';

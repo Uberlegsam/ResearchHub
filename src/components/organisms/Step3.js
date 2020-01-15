@@ -1,7 +1,4 @@
 import React from 'react';
-import Button from '../atoms/btn';
-import arrow from '../../images/arrowleft.svg';
-import textareas from '../molecules/textareas';
 
 function Step3(){
 

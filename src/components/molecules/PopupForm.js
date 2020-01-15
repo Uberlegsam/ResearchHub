@@ -2,7 +2,7 @@ import fb from "../../images/SocialForms/fb.svg";
 import linkin from "../../images/SocialForms/linkin.svg";
 import link from "../../images/SocialForms/link.svg";
 
-export const Forms =[
+export const DataInput =[
     {
         id: 'pf1',
         label: 'First Name',
@@ -29,7 +29,7 @@ export const Forms =[
     },
 ];
 
-export const SocialForms=[
+export const SocMediaInput=[
     { 
         placeholder: 'Paste link here',
         src: fb

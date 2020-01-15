@@ -1,4 +1,4 @@
-const Сheckbox=[
+const Papertype=[
     {   
         id: 1,
         label: 'Journal',
@@ -18,4 +18,4 @@ const Сheckbox=[
     },
 ];
 
-export default Сheckbox
+export default Papertype

@@ -1,4 +1,4 @@
-const textareas=[
+const SummaryTextAreas=[
     {
         id: "ta1",
         label: '# Summary',
@@ -16,5 +16,5 @@ const textareas=[
     }
 ]
 
-export default textareas
+export default SummaryTextAreas
 

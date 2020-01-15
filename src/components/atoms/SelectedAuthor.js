@@ -2,11 +2,7 @@ import React from 'react';
 import trash from '../../images/delete.svg'
 
 
-
-
-
-function SingleAuthor(props){
-
+function SelectedAuthor(props){
     return(
         <div className="single-author">
             <img src={props.img}></img>
@@ -19,4 +15,4 @@ function SingleAuthor(props){
     )
 }
 
-export default SingleAuthor
+export default SelectedAuthor

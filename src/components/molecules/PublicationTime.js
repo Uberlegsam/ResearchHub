@@ -1,4 +1,4 @@
-const DatePublication=[
+const PublicationTime=[
     {  
         id: 'year',
         label: 'Year of Publication',
@@ -21,4 +21,4 @@ const DatePublication=[
     },
 ];
 
-export default DatePublication
+export default PublicationTime

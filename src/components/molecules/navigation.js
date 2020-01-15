@@ -1,4 +1,4 @@
-export const navigationLeft=[
+export const NavigationLeft=[
     { 
         id: 'nav1',
         href: '#',
@@ -18,7 +18,7 @@ export const navigationLeft=[
     },
 ];
 
- export const navigationRight=[
+ export const NavigationRight=[
     { 
         id: 'nav4',
         href: '#',

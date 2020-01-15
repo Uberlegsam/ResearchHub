@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import Select, { components } from "react-select";
 import createClass from "create-react-class";
-import Button from "../atoms/btn";
-import {authors} from "./authors";
-import SingleAuthor from "../atoms/SingleAuthor";
-import PopUp from "../PopUp";
-import {MenuList} from "../molecules/menulist"
+import {Authors} from "./Authors";
+import SelectedAuthor from "../atoms/SelectedAuthor";
+import {MenuList} from "./MenuList";
+import CreateUserButton from "../atoms/CreateUserButton"
 
 
 const Option = createClass({
@@ -34,21 +33,24 @@ export default class extends Component {
 
         this.state = {
           authors: [],
-          selectRef: ""
+          selectRef: "",
+          seen: false
         };
-
+        
         this.addedAuthor = this.addedAuthor.bind(this);
       }
 
     addedAuthor(e){
       if(e){
         this.setState({
-            authors: e.map(item => <SingleAuthor key={item.id} img={item.img} value={item.value} name={item.label} mail={item.mail} function={() => this.delAuthor(e, item)}/>)
+            authors: e.map(item => <SelectedAuthor key={item.id} img={item.img} value={item.value} name={item.label} mail={item.mail} function={() => this.delAuthor(e, item)}/>),
+            otrisovka: true
         }); 
       }
       else{
         this.state = {
-          authors: []
+          authors: [],
+          otrisovka: false
         };
       }
     }
@@ -62,6 +64,7 @@ export default class extends Component {
       this.state.selectRef.onChange(e, "deselect-option")
         
     };
+
   
     // togglePop = () => {
     //   document.body.style.overflow = 'hidden';
@@ -74,6 +77,14 @@ export default class extends Component {
     // };
 
   render() {
+      let btn = null;
+      if(this.state.authors.length > 0){
+        btn = <CreateUserButton />;
+      }
+      else{
+        btn = null;
+      }
+
     return (
         <div>
             <Select
@@ -92,7 +103,7 @@ export default class extends Component {
                 isMulti
                 placeholder="Search for author"
                 components={{ Option, MenuList}}
-                options={authors}
+                options={Authors}
                 backspaceRemovesValue={true}
                 hideSelectedOptions={false}
                 onChange={e => {this.addedAuthor(e)}}
@@ -105,8 +116,8 @@ export default class extends Component {
                 <PopUp toggle={this.togglePop} /> 
                 : null}
               </div> */}
-            
             {this.state.authors}
+            {btn}
         </div>
     );
   }

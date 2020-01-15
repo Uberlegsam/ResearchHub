@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TimeItems(props){
+function PublicationItem(props){
 
     return(
         <div key={props.id} className="time-item">
@@ -11,9 +11,9 @@ function TimeItems(props){
                     placeholder={props.placeholder} 
                     className="input-information input-information--date" 
                     id={props.id}
-                    ></input>
+                    />
         </div>
     )
 }
 
-export default TimeItems
+export default PublicationItem

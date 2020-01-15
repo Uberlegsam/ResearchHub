@@ -1,14 +1,13 @@
 import React from 'react';
-import Button from '../atoms/btn';
-import textareas from '../molecules/textareas';
-import TextArea from '../atoms/textarea-item';
-import preformatted from '../molecules/preformatted';
-import PreformattedItem from '../atoms/preformatted-item';
+import SummaryTextArea from '../atoms/SummaryTextArea';
+import SummaryTextAreas from '../molecules/SummaryTextAreas';
+import Preformatted from '../molecules/Preformatted';
+import PreformattedItem from '../atoms/PreformattedItem';
 
 function Step2(){
 
-    const textarea = textareas.map(item => <TextArea key={item.id} id={item.id} label={item.label} placeholder={item.placeholder}/>)
-    const preformatteditem = preformatted.map(item => <PreformattedItem key={item.id} id={item.id} label={item.label} />) 
+    const textarea = SummaryTextAreas.map(item => <SummaryTextArea key={item.id} id={item.id} label={item.label} placeholder={item.placeholder}/>)
+    const preformatteditem = Preformatted.map(item => <PreformattedItem key={item.id} id={item.id} label={item.label} />) 
 
     const greenlinestep2={
         width: '66.772%',

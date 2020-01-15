@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SingleForm(props){
+export default function PopupInput(props){
 
     return(
     <div className="popup-form dropzone-title">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SocialForm(props){
+export default function SocialInput(props){
 
     return(
         <div className="social-form">

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
-import PopUp from "../PopUp";
+import PopUp from "./PopUp";
 
-import Button from "../atoms/btn";
+import Button from "../atoms/Button";
 
 
 export const MenuList = props => {

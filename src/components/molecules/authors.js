@@ -4,7 +4,7 @@ import photo2 from '../../images/Oval(2).png';
 import photo3 from '../../images/Oval(3).png';
 
 
-export const authors = [
+export const Authors = [
     { 
       id: 'a1',
       value: 'Joshua Cooper',

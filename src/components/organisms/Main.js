@@ -6,8 +6,8 @@ import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
 
-import Buttons1  from '../molecules/buttonsBlock1';
-import Buttons2  from '../molecules/buttonsBlock2';
+import Buttons1  from '../molecules/ButtonsBlock1';
+import Buttons2  from '../molecules/ButtonsBlock2';
 
 
 class Main extends Component {
@@ -159,7 +159,6 @@ class Main extends Component {
         };
 
     return(
-        <Router>
             <main className="main">
                 <Route path="/step/1" exact component={Step1}/>
                 <Route path="/step/2" exact component={Step2}/>
@@ -169,7 +168,7 @@ class Main extends Component {
                 <Route path="/step/2" exact render={(props) => <Buttons2 {...buttonStep2}/>}/>
                 <Route path="/step/3" exact render={(props) => <Buttons2 {...buttonStep3}/>}/>
             </main>
-        </Router>
+
     )
 }
 }

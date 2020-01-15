@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Hubsitems(props){
+function HubsItem(props){
 
     return(
         <option className="hubs-item ">{props.name}</option>
     )
 }
 
-export default Hubsitems
+export default HubsItem

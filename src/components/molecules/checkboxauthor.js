@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Checkboxauthor(){
+function CheckboxAuthor(){
 
     return(
         <div className="checkbox-author ">
@@ -10,4 +10,4 @@ function Checkboxauthor(){
     )
 }
 
-export default Checkboxauthor
+export default CheckboxAuthor

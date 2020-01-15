@@ -1,13 +1,13 @@
 import React from 'react';
 import footerLogo from '../../images/footer-logo.svg';
-import NavItem from '../atoms/nav-item';
-import SocialItem from '../atoms/social-item';
-import {navigationLeft, navigationRight} from '../molecules/navigation';
-import SocialLinks from '../molecules/sociallinks';
+import NavItem from '../atoms/NavItem';
+import SocialItem from '../atoms/SocialItem';
+import {NavigationLeft, NavigationRight} from '../molecules/Navigation';
+import SocialLinks from '../molecules/SocialLinks';
 
 function Footer(){
-    const navLeft = navigationLeft.map(item => <NavItem key={item.id} href={item.href} name={item.name} />)
-    const navRight = navigationRight.map(item => <NavItem key={item.id} href={item.href} name={item.name} />)
+    const navLeft = NavigationLeft.map(item => <NavItem key={item.id} href={item.href} name={item.name} />)
+    const navRight = NavigationRight.map(item => <NavItem key={item.id} href={item.href} name={item.name} />)
     const socialLink = SocialLinks.map(item => <SocialItem key={item.id} href={item.href} src={item.src} />)
 
     return(

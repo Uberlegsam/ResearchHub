@@ -1,4 +1,4 @@
-const preformatted=[
+const Preformatted=[
     {
         id: "pm1",
         label: '*bold*',
@@ -25,5 +25,5 @@ const preformatted=[
     },
 ]
 
-export default preformatted
+export default Preformatted
 
